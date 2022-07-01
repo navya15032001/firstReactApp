@@ -5,9 +5,9 @@ export const App = () => {
   const filtered= names.filter(name => name.includes('r'))
   return (
     <div>
-{
-  filtered.map(item => <li>{item}</li>)
-}
+      {
+        filtered.map(item => <li>{item}</li>)
+      }
     </div>
   )
 }
