@@ -1,14 +1,15 @@
 import React from 'react'
 
 export const App = () => {
-  const names =['navya','ramya','swathi','radha'];
-  const filtered= names.filter(name => name.includes('r'))
+  const str = ['Navya','Ramya','Kavya','Bhavya','Sravya']
   return (
     <div>
       {
-        filtered.map(item => <li>{item}</li>)
-      }
-    </div>
+      str.map(
+        (value,index) => <li key={index}>{value}</li>
+      )
+}
+        </div>
   )
 }
 export default App;
